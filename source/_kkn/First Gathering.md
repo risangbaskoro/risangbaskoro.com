@@ -1,5 +1,6 @@
 ---
 title: First Gathering
+description: Notula untuk first gathering euy
 ---
 
 # First Gathering
