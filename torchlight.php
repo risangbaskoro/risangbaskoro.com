@@ -7,7 +7,7 @@ return [
 
     // Your API token from torchlight.dev. You can set it as an ENV variable
     // (shown below), or just hardcode it if your repo is private.  
-    'token' => getenv('TORCHLIGHT_TOKEN'),
+    'token' => 'torch_gdbCFB3PahAjel1w6TbePCJ97be9es7RzLlTxpRh',
 
     // If you want to register the blade directives, set this to true.
     'blade_components' => true,
@@ -32,7 +32,7 @@ return [
         'lineNumbers' => true,
 
         // Control the `style` attribute applied to line numbers.
-        // 'lineNumbersStyle' => '',
+        'lineNumbersStyle' => 'margin-right: 1rem;',
 
         // Turn on +/- diff indicators.
         'diffIndicators' => true,

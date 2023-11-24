@@ -1,8 +1,5 @@
 ---
-extends: _layouts.notes
-section: body
-title: Hello
-slug: hello
+title: Hello World
 ---
 
 # Hello

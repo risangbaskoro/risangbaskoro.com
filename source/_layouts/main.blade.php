@@ -7,7 +7,7 @@
 
         <meta name="description" content="{{ $page->description }}">
 
-        <title>{{ $page->title }}</title>
+        <title>{{ $page->title ? $page->title. ' | ' : '' }}{{ $page->siteName }}</title>
 
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
         <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
@@ -16,5 +16,7 @@
         @include('_partials.header')
 
         @yield('body')
+
+        @include('_partials.footer')
     </body>
 </html>

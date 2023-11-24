@@ -9,7 +9,7 @@ title: Table of Contents
         Table of Contents
     </h1>
 
-    @foreach($notes as $note)
+    @foreach($kkn as $note)
         <li>
             <a href="{{ $note->getUrl() }}">{{ $note->title }}</a>
         </li>
