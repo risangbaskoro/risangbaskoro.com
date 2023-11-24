@@ -5,5 +5,10 @@ return [
     'baseUrl' => '',
     'title' => 'Risang Baskoro',
     'description' => 'Personal Blog.',
-    'collections' => [],
+    'collections' => [
+        'notes' => [
+            'path' => 'notes/{-filename}',
+            'sort' => '-date',
+        ],
+    ],
 ];
