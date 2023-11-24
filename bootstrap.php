@@ -1,5 +1,6 @@
 <?php
 
+use App\Listeners\GenerateSitemap;
 use TightenCo\Jigsaw\Jigsaw;
 
 /** @var \Illuminate\Container\Container $container */
@@ -15,5 +16,9 @@ use TightenCo\Jigsaw\Jigsaw;
  *     // Your code here
  * });
  */
+
+$events->afterBuild([
+    GenerateSitemap::class
+]);
 
 \Torchlight\Jigsaw\TorchlightExtension::make($container, $events)->boot();

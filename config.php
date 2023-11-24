@@ -2,7 +2,7 @@
 
 return [
     'production' => false,
-    'baseUrl' => '',
+    'baseUrl' => 'https://risangabaskoro.com',
     'siteName' => 'Risang Baskoro',
     'description' => 'Personal Blog.',
     'collections' => [
