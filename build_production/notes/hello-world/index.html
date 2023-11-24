@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="canonical" href="/notes/hello-world">
+
+        <meta name="description" content="Personal Blog.">
+
+        <title>Hello World | Risang Baskoro</title>
+
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=871cca454d147a4a4a36530e02b6fd6c">
+        <script defer src="/assets/build/js/main.js?id=a68b2ddc7136a64b099daa43ca77fef0"></script>
+    </head>
+    <body class="text-gray-900 font-sans antialiased">
+        <nav class="p-6 space-x-4 flex justify-center items-center w-full">
+    <a href="/" class="hover:underline">Home</a>
+    <a href="/notes" class="hover:underline">Notes</a>
+    <a href="/kkn" class="hover:underline">KKN</a>
+</nav>
+            <div class="grid grid-cols-5 mx-auto">
+        <div class="mx-auto max-w-md hidden md:block">
+    <ul>
+                    <li>
+                <a href="/notes">Table of Contents</a>
+            </li>
+                    <li>
+                <a href="/notes/hello-world">Hello World</a>
+            </li>
+            </ul>
+</div>        <main class="w-full px-8 md:px-0 max-auto col-span-full md:col-span-3 mb-16">
+            <div class="prose max-w-7xl mb-8">
+                <h1>Hello</h1>
+
+<p>This is an example notes.</p>
+
+<p>We can use <em>italic</em> or <strong>bold</strong> text.</p>
+
+<p>We can also use <a href="https://github.com/risangbaskoro">links</a>.</p>
+
+<h2>Images</h2>
+
+<p>We can also use images:</p>
+
+<p><img src="https://github.com/risangbaskoro.png?size=100" alt="" /></p>
+
+<h2>Code blocks</h2>
+
+<p>And provide some code blocks:</p>
+
+<pre><code data-theme="github-dark" data-lang="php" class='language-php torchlight' style='background-color: #24292e; --theme-selection-background: #39414a;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#444d56; margin-right: 1rem;" class="line-number"> 1</span><span style="color: #E1E4E8;">&lt;?php</span></div><div class='line'><span style="color:#444d56; margin-right: 1rem;" class="line-number"> 2</span>&nbsp;</div><div class='line'><span style="color:#444d56; margin-right: 1rem;" class="line-number"> 3</span><span style="color: #F97583;">namespace</span><span style="color: #E1E4E8;"> </span><span style="color: #B392F0;">App\Listeners</span><span style="color: #E1E4E8;">;</span></div><div class='line'><span style="color:#444d56; margin-right: 1rem;" class="line-number"> 4</span>&nbsp;</div><div class='line'><span style="color:#444d56; margin-right: 1rem;" class="line-number"> 5</span><span style="color: #F97583;">use</span><span style="color: #E1E4E8;"> </span><span style="color: #79B8FF;">TightenCo\Jigsaw\Jigsaw</span><span style="color: #E1E4E8;">;</span></div><div class='line'><span style="color:#444d56; margin-right: 1rem;" class="line-number"> 6</span><span style="color: #F97583;">use</span><span style="color: #E1E4E8;"> </span><span style="color: #79B8FF;">samdark\sitemap\Sitemap</span><span style="color: #E1E4E8;">;</span></div><div class='line'><span style="color:#444d56; margin-right: 1rem;" class="line-number"> 7</span>&nbsp;</div><div class='line'><span style="color:#444d56; margin-right: 1rem;" class="line-number"> 8</span><span style="color: #F97583;">class</span><span style="color: #E1E4E8;"> </span><span style="color: #B392F0;">GenerateSitemap</span></div><div class='line'><span style="color:#444d56; margin-right: 1rem;" class="line-number"> 9</span><span style="color: #E1E4E8;">{</span></div><div class='line'><span style="color:#444d56; margin-right: 1rem;" class="line-number">10</span><span style="color: #E1E4E8;">    </span><span style="color: #F97583;">public</span><span style="color: #E1E4E8;"> </span><span style="color: #F97583;">function</span><span style="color: #E1E4E8;"> </span><span style="color: #B392F0;">handle</span><span style="color: #E1E4E8;">(</span><span style="color: #79B8FF;">Jigsaw</span><span style="color: #E1E4E8;"> $jigsaw)</span></div><div class='line'><span style="color:#444d56; margin-right: 1rem;" class="line-number">11</span><span style="color: #E1E4E8;">    {</span></div><div class='line'><span style="color:#444d56; margin-right: 1rem;" class="line-number">12</span><span style="color: #E1E4E8;">        $baseUrl </span><span style="color: #F97583;">=</span><span style="color: #E1E4E8;"> $jigsaw</span><span style="color: #F97583;">-&gt;</span><span style="color: #B392F0;">getConfig</span><span style="color: #E1E4E8;">(</span><span style="color: #9ECBFF;">&#39;baseUrl&#39;</span><span style="color: #E1E4E8;">);</span></div><div class='line'><span style="color:#444d56; margin-right: 1rem;" class="line-number">13</span><span style="color: #E1E4E8;">        $sitemap </span><span style="color: #F97583;">=</span><span style="color: #E1E4E8;"> </span><span style="color: #F97583;">new</span><span style="color: #E1E4E8;"> </span><span style="color: #79B8FF;">Sitemap</span><span style="color: #E1E4E8;">($jigsaw</span><span style="color: #F97583;">-&gt;</span><span style="color: #B392F0;">getDestinationPath</span><span style="color: #E1E4E8;">() </span><span style="color: #F97583;">.</span><span style="color: #E1E4E8;"> </span><span style="color: #9ECBFF;">&#39;/sitemap.xml&#39;</span><span style="color: #E1E4E8;">);</span></div><div class='line'><span style="color:#444d56; margin-right: 1rem;" class="line-number">14</span>&nbsp;</div><div class='line'><span style="color:#444d56; margin-right: 1rem;" class="line-number">15</span><span style="color: #E1E4E8;">        </span><span style="color: #B392F0;">collect</span><span style="color: #E1E4E8;">($jigsaw</span><span style="color: #F97583;">-&gt;</span><span style="color: #B392F0;">getOutputPaths</span><span style="color: #E1E4E8;">())</span><span style="color: #F97583;">-&gt;</span><span style="color: #B392F0;">each</span><span style="color: #E1E4E8;">(</span><span style="color: #F97583;">function</span><span style="color: #E1E4E8;"> ($path) </span><span style="color: #F97583;">use</span><span style="color: #E1E4E8;"> ($baseUrl, $sitemap) {</span></div><div class='line'><span style="color:#444d56; margin-right: 1rem;" class="line-number">16</span><span style="color: #E1E4E8;">            </span><span style="color: #F97583;">if</span><span style="color: #E1E4E8;"> (</span><span style="color: #F97583;">!</span><span style="color: #E1E4E8;"> </span><span style="color: #79B8FF;">$this</span><span style="color: #F97583;">-&gt;</span><span style="color: #B392F0;">isAsset</span><span style="color: #E1E4E8;">($path)) {</span></div><div class='line'><span style="color:#444d56; margin-right: 1rem;" class="line-number">17</span><span style="color: #E1E4E8;">                $sitemap</span><span style="color: #F97583;">-&gt;</span><span style="color: #B392F0;">addItem</span><span style="color: #E1E4E8;">($baseUrl </span><span style="color: #F97583;">.</span><span style="color: #E1E4E8;"> $path, </span><span style="color: #79B8FF;">time</span><span style="color: #E1E4E8;">(), </span><span style="color: #79B8FF;">Sitemap</span><span style="color: #F97583;">::</span><span style="color: #79B8FF;">DAILY</span><span style="color: #E1E4E8;">);</span></div><div class='line'><span style="color:#444d56; margin-right: 1rem;" class="line-number">18</span><span style="color: #E1E4E8;">            }</span></div><div class='line'><span style="color:#444d56; margin-right: 1rem;" class="line-number">19</span><span style="color: #E1E4E8;">        });</span></div><div class='line'><span style="color:#444d56; margin-right: 1rem;" class="line-number">20</span>&nbsp;</div><div class='line'><span style="color:#444d56; margin-right: 1rem;" class="line-number">21</span><span style="color: #E1E4E8;">        $sitemap</span><span style="color: #F97583;">-&gt;</span><span style="color: #B392F0;">write</span><span style="color: #E1E4E8;">();</span></div><div class='line'><span style="color:#444d56; margin-right: 1rem;" class="line-number">22</span><span style="color: #E1E4E8;">    }</span></div><div class='line'><span style="color:#444d56; margin-right: 1rem;" class="line-number">23</span>&nbsp;</div><div class='line'><span style="color:#444d56; margin-right: 1rem;" class="line-number">24</span><span style="color: #E1E4E8;">    </span><span style="color: #F97583;">public</span><span style="color: #E1E4E8;"> </span><span style="color: #F97583;">function</span><span style="color: #E1E4E8;"> </span><span style="color: #B392F0;">isAsset</span><span style="color: #E1E4E8;">($path)</span></div><div class='line'><span style="color:#444d56; margin-right: 1rem;" class="line-number">25</span><span style="color: #E1E4E8;">    {</span></div><div class='line'><span style="color:#444d56; margin-right: 1rem;" class="line-number">26</span><span style="color: #E1E4E8;">        </span><span style="color: #F97583;">return</span><span style="color: #E1E4E8;"> </span><span style="color: #B392F0;">starts_with</span><span style="color: #E1E4E8;">($path, </span><span style="color: #9ECBFF;">&#39;/assets&#39;</span><span style="color: #E1E4E8;">);</span></div><div class='line'><span style="color:#444d56; margin-right: 1rem;" class="line-number">27</span><span style="color: #E1E4E8;">    }</span></div><div class='line'><span style="color:#444d56; margin-right: 1rem;" class="line-number">28</span><span style="color: #E1E4E8;">}</span></div></code></pre>
+            </div>
+            <script src="https://giscus.app/client.js"
+        data-repo="risangbaskoro/discus"
+        data-repo-id="R_kgDOKxoMDg"
+        data-category="General"
+        data-category-id="DIC_kwDOKxoMDs4CbOcs"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="0"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+<noscript>
+    Please enable JavaScript to view the comments.
+</noscript>
+        </main>
+    </div>
+
+        <footer class="mx-auto w-full py-8 flex flex-col justify-center items-center space-y-2 text-sm">
+    <p>
+        © 2023 Risang Baskoro.
+    </p>
+    <p>
+        Built with
+        <a href="https://jigsaw.tighten.co" target="_blank" class="font-bold hover:underline">Jigsaw</a> and
+        <a href="https://tailwindcss.com" target="_blank" class="font-bold hover:underline">TailwindCSS</a>.
+
+        Code highlighting provided by <a href="https://torchlight.dev" target="_blank" class="font-bold hover:underline">Torchlight</a>.
+    </p>
+</footer>    </body>
+</html>
