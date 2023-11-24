@@ -17,11 +17,11 @@ module.exports = {
                             marginBottom: '0',
                         },
                         h1: {
-                            marginTop: '0',
-                            marginBottom: '0.100rem',
+                            marginTop: '1.5rem',
+                            marginBottom: '0.250rem',
                         },
                         h2: {
-                            marginTop: '0',
+                            marginTop: '1.5rem',
                             marginBottom: '0.250rem',
                         },
                         img: {
