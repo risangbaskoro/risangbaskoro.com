@@ -7,6 +7,13 @@
     <meta name="og:url" content="{{ $page->getUrl() }}">
     <meta name="og:site_name" content="{{ $page->siteName }}">
 
+    @if($page->featureImage)
+    <meta name="twitter:card" content="summary_large_image" />
+    @else
+    <meta name="twitter:card" content="summary" />
+    @endif
+    <meta name="twitter:creator" content="@risangbaskoro" />
+
     <meta name="description" content="{{ $page->metaDescription() }}">
     <title>{{ $page->title }} | {{ $page->siteName }}</title>
 @endpush
