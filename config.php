@@ -17,7 +17,7 @@ return [
             'extends' => '_layouts.post',
             'path' => 'posts/{-title}',
             'items' => function ($config) {
-                return (new ContentfulCollection)->getPosts();
+                return ContentfulCollection::make()->getPosts();
             },
             'excerpt' => function ($page, $limit = 100, $end = '...'): string {
                 return substr(strip_tags($page), 0, $limit) . $end;
