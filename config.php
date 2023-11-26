@@ -19,6 +19,9 @@ return [
             'items' => function ($config) {
                 return (new ContentfulCollection)->getPosts();
             },
+            'excerpt' => function ($page, $limit = 50, $end = '...') {
+                return substr(strip_tags($page), 0, $limit) . $end;
+            },
         ]
     ],
 
