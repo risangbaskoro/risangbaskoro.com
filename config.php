@@ -7,6 +7,7 @@ return [
     'production' => false,
     'baseUrl' => 'http://localhost:8000',
     'title' => 'Risang Baskoro',
+    'siteName' => 'Risang Baskoro',
     'description' => 'Personal Site',
 
     // Collections
