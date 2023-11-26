@@ -4,7 +4,8 @@
     </a>
 
     <nav class="flex space-x-4 justify-center items-center">
-        <a href="/" class="hover:underline">Home</a>
-        <a href="/posts" class="hover:underline">Posts</a>
+        @foreach($page->navigations as $nav)
+            <a href="{{ $nav->link }}" class="hover:underline">{{ $nav->title }}</a>
+        @endforeach
     </nav>
 </div>

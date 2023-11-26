@@ -22,6 +22,18 @@ return [
         ]
     ],
 
+    // Navigation
+    'navigations' => [
+        [
+            'title' => 'Home',
+            'link' => '/'
+        ],
+        [
+            'title' => 'Posts',
+            'link' => '/posts'
+        ],
+    ],
+
     // Contentful
     'contentful' => [
         'space_id' => env('CONTENTFUL_SPACE_ID'),

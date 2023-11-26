@@ -9,6 +9,8 @@
 
         @stack('meta')
 
+        <title>{{ $page->siteName }}</title>
+
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
         <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
     </head>
