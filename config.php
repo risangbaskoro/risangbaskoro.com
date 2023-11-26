@@ -28,10 +28,6 @@ return [
     // Navigation
     'navigations' => [
         [
-            'title' => 'Home',
-            'link' => '/'
-        ],
-        [
             'title' => 'Posts',
             'link' => '/posts'
         ],
