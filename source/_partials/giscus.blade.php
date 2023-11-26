@@ -1,4 +1,4 @@
-<div class="mx-auto max-w-2xl w-full my-8">
+<div class="mx-auto max-w-2xl w-full my-8 p-6 md:px-0">
     <script src="https://giscus.app/client.js"
             data-repo="risangbaskoro/risangbaskoro.com"
             data-repo-id="R_kgDOKxppCg"

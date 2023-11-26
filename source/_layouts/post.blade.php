@@ -15,7 +15,7 @@
         >
     @endif
 
-    <div class="prose prose-invert mx-auto">
+    <div class="prose prose-invert mx-auto px-6 md:px-0">
         <h1>
             {{ $page->title }}
         </h1>
