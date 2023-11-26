@@ -2,6 +2,7 @@
 
 use Symfony\Component\Dotenv\Dotenv;
 use TightenCo\Jigsaw\Jigsaw;
+use Torchlight\Jigsaw\TorchlightExtension;
 
 /** @var \Illuminate\Container\Container $container */
 /** @var \TightenCo\Jigsaw\Events\EventBus $events */
@@ -16,3 +17,5 @@ if (file_exists(__DIR__.'/.env')) {
  * You can run custom code at different stages of the build process by
  * listening to the 'beforeBuild', 'afterCollections', and 'afterBuild' events.
  */
+
+TorchlightExtension::make($container, $events)->boot();

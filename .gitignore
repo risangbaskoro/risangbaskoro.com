@@ -11,3 +11,6 @@ npm-debug.log
 /build_staging/
 /build_production/
 /source/assets/build/
+
+# Torchlight cache
+/torchlight_cache/
