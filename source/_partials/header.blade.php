@@ -1,4 +1,4 @@
-<header class="sticky z-50 top-0 backdrop-blur-xl bg-stone-900/75 hover:bg-stone-900 transition">
+<header class="sticky z-50 top-0 backdrop-blur-xl bg-dark-900/75 hover:bg-dark-900 transition">
     <nav class="absolute p-6 grid grid-cols-3 justify-between items-center w-full">
         <a href="/"
            @class([
@@ -12,7 +12,7 @@
             @foreach($page->navigations as $nav)
                 <a href="{{ $page->baseUrl . $nav->link }}"
                    @class([
-                        "px-4 py-2 hover:bg-stone-700 transition duration-300 ease-in-out rounded-lg hover:shadow !shadow-stone-600",
+                        "px-4 py-2 hover:bg-dark-700 transition duration-300 ease-in-out rounded-lg hover:shadow !shadow-dark-600",
                         "pointer-events-none" => $page->getUrl() === $page->baseUrl . $nav->link,
                     ])
                 >

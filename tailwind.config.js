@@ -1,3 +1,5 @@
+colors = require('tailwindcss/colors')
+
 module.exports = {
     content: require('fast-glob').sync([
         'source/**/*.{blade.php,blade.md,md,html,vue}',
@@ -5,6 +7,9 @@ module.exports = {
     ], {dot: true}),
     theme: {
         extend: {
+            colors: {
+                'dark': colors.stone,
+            },
             aspectRatio: {
                 "postImage": "16/4"
             }
