@@ -1,7 +1,7 @@
 @extends('_layouts.master')
 
 @push('meta')
-    <meta name="description" content="{{ $page->excerpt() }}">
+    <meta name="description" content="{{ $page->excerpt(50) }}">
     <title>{{ $page->title }} | {{ $page->siteName }}</title>
 @endpush
 

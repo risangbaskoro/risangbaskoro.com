@@ -28,6 +28,7 @@ class ContentfulCollection
                 return [
                     'title' => $item->title,
                     'content' => $item->content,
+                    'isFeatured' => $item->isFeatured,
                 ];
             });
     }
