@@ -1,6 +1,10 @@
 <header class="sticky z-50 top-0 backdrop-blur-xl hover:bg-stone-900 transition">
     <nav class="absolute p-6 grid grid-cols-3 justify-between items-center w-full bg-stone-900/75">
-        <a href="/">
+        <a href="/"
+           @class([
+                "pointer-events-none" => $page->getUrl() === $page->baseUrl.'/',
+           ])
+        >
             <img src="https://github.com/risangbaskoro.png?size=50" alt="Logo" draggable="false">
         </a>
 
