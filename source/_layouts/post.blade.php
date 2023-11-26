@@ -1,6 +1,12 @@
 @extends('_layouts.master')
 
 @push('meta')
+    <meta name="og:type" content="article">
+    <meta name="og:title" content="{{ $page->title }}">
+    <meta name="og:description" content="{{ $page->metaDescription() }}">
+    <meta name="og:url" content="{{ $page->getUrl() }}">
+    <meta name="og:site_name" content="{{ $page->siteName }}">
+
     <meta name="description" content="{{ $page->metaDescription() }}">
     <title>{{ $page->title }} | {{ $page->siteName }}</title>
 @endpush
