@@ -22,6 +22,25 @@ return [
             'excerpt' => function ($page, $limit = 100, $end = '...'): string {
                 return substr(strip_tags($page), 0, $limit) . $end;
             },
+            'metaDescription' => function ($page): string {
+                $doc = new DOMDocument();
+
+                $doc->loadHTML($page);
+
+                $paragraphs = $doc->getElementsByTagName('p');
+                $firstParagraph = $paragraphs->item(0);
+
+                if ($firstParagraph) {
+                    $metaDescription = $firstParagraph->textContent;
+                } else {
+                    $bodyContent = $doc->getElementsByTagName('body')->item(0);
+                    $metaDescription = $bodyContent ? $bodyContent->textContent : '';
+                }
+
+                $metaDescription = trim($metaDescription);
+
+                return substr($metaDescription, 0, 160);
+            },
         ]
     ],
 
