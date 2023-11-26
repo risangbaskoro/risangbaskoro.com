@@ -1,14 +1,28 @@
 <?php
 
+use App\Contentful\ContentfulCollection;
+
 return [
     // Main Site Config
     'production' => false,
-    'baseUrl' => '',
+    'baseUrl' => 'http://localhost:8000',
     'title' => 'Risang Baskoro',
     'description' => 'Personal Site',
 
     // Collections
     'collections' => [
-
+        'posts' => [
+            'sort' => '-publishDate',
+            'extends' => '_layouts.main',
+            'items' => function ($config) {
+                return (new ContentfulCollection)->getPosts();
+            },
+        ]
     ],
+
+    // Contentful
+    'contentful' => [
+        'space_id' => env('CONTENTFUL_SPACE_ID'),
+        'access_token' => env('CONTENTFUL_ACCESS_TOKEN'),
+    ]
 ];

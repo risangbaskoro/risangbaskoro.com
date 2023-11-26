@@ -1,7 +1,11 @@
 {
     "require": {
         "php": "^8.1",
+        "contentful/contentful": "^7.0",
         "tightenco/jigsaw": "^1.7"
+    },
+    "require-dev": {
+        "symfony/dotenv": "^6.3"
     },
     "autoload": {
         "psr-4": {
