@@ -1,5 +1,5 @@
-<header class="sticky z-50 top-0 backdrop-blur-xl hover:bg-stone-900 transition">
-    <nav class="absolute p-6 grid grid-cols-3 justify-between items-center w-full bg-stone-900/75">
+<header class="sticky z-50 top-0 backdrop-blur-xl bg-stone-900/75 hover:bg-stone-900 transition">
+    <nav class="absolute p-6 grid grid-cols-3 justify-between items-center w-full">
         <a href="/"
            @class([
                 "pointer-events-none" => $page->getUrl() === $page->baseUrl.'/',
