@@ -13,7 +13,8 @@ return [
     'collections' => [
         'posts' => [
             'sort' => '-publishDate',
-            'extends' => '_layouts.main',
+            'extends' => '_layouts.post',
+            'path' => 'posts/{-title}',
             'items' => function ($config) {
                 return (new ContentfulCollection)->getPosts();
             },
