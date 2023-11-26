@@ -10,8 +10,8 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-end gap-8">
             @foreach($posts->filter(fn ($post) => $post->isFeatured)->take(4) as $post)
-                <a href="{{ $post->getUrl() }}" class="mx-auto">
-                    <div class="max-w-sm rounded overflow-hidden shadow-md hover:shadow-lg transition-shadow !shadow-dark-600 border border-dark-600">
+                <a href="{{ $post->getUrl() }}" class="mx-auto w-full">
+                    <div class="min-w-full max-w-sm rounded overflow-hidden shadow-md hover:shadow-lg transition-shadow !shadow-dark-600 border border-dark-600">
                         @if($post->featureImage)
                             <img
                                 class="w-full object-cover aspect-video" src="{{ $post->featureImage['url'] }}"
@@ -37,8 +37,8 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-end gap-8">
             @foreach($posts as $post)
-                <a href="{{ $post->getUrl() }}" class="mx-auto">
-                    <div class="max-w-sm rounded overflow-hidden shadow-md hover:shadow-lg transition-shadow !shadow-dark-600 border border-dark-600">
+                <a href="{{ $post->getUrl() }}" class="mx-auto w-full">
+                    <div class="min-w-full max-w-sm rounded overflow-hidden shadow-md hover:shadow-lg transition-shadow !shadow-dark-600 border border-dark-600">
                         @if($post->featureImage)
                             <img
                                     class="w-full object-cover aspect-video" src="{{ $post->featureImage['url'] }}"
