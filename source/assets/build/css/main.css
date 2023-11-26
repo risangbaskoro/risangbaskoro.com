@@ -904,11 +904,24 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.mt-8 {
+  margin-top: 2rem;
+}
 .flex {
   display: flex;
 }
 .w-full {
   width: 100%;
+}
+.max-w-4xl {
+  max-width: 56rem;
+}
+.max-w-2xl {
+  max-width: 42rem;
 }
 .flex-col {
   flex-direction: column;

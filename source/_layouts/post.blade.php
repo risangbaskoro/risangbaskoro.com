@@ -16,5 +16,7 @@
         {!! $page !!}
     </div>
 
+    @include('_partials.giscus')
+
     @include('_partials.footer')
 @endsection

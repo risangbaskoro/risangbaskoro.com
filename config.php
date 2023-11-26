@@ -38,5 +38,5 @@ return [
     'contentful' => [
         'space_id' => env('CONTENTFUL_SPACE_ID'),
         'access_token' => env('CONTENTFUL_ACCESS_TOKEN'),
-    ]
+    ],
 ];
