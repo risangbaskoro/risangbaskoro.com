@@ -4,6 +4,6 @@
     @include('_partials.header')
 
     <div class="p-8">
-        <h1 class="text-3xl font-bold">Hello world!</h1>
+        <h1 class="text-3xl font-bold">Hi 👋</h1>
     </div>
 @endsection
