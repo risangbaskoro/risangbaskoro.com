@@ -28,7 +28,7 @@
         >
     @endif
 
-    <div class="prose prose-invert mx-auto px-6 md:px-0">
+    <div class="prose prose-invert max-w-4xl container mx-auto px-6 lg:px-0">
         <h1>
             {{ $page->title }}
         </h1>
