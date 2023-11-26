@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="canonical" href="{{ $page->getUrl() }}">
 
+        <link rel="icon" type="image/png" href="https://github.com/risangbaskoro.png?size=50" />
+
         @stack('meta')
 
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
