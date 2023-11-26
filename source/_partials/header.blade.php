@@ -1,4 +1,4 @@
-<div class="p-6 flex justify-between items-center w-full">
+<div class="p-6 grid grid-cols-3 justify-between items-center w-full">
     <a href="/">
         <img src="https://github.com/risangbaskoro.png?size=50" alt="Logo" draggable="false">
     </a>
