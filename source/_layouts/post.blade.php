@@ -15,4 +15,6 @@
 
         {!! $page !!}
     </div>
+
+    @include('_partials.footer')
 @endsection

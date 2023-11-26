@@ -16,4 +16,6 @@
             @endforeach
         </ul>
     </div>
+
+    @include('_partials.footer')
 @endsection
