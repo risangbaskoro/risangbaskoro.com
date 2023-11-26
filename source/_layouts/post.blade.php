@@ -6,6 +6,8 @@
 @endpush
 
 @section('body')
+    @include('_partials.header')
+
     <div class="prose mx-auto">
         <h1>
             {{ $page->title }}
