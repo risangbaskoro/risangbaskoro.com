@@ -9,7 +9,7 @@
             data-reactions-enabled="0"
             data-emit-metadata="0"
             data-input-position="top"
-            data-theme="light"
+            data-theme="dark_dimmed"
             data-lang="en"
             data-loading="lazy"
             crossorigin="anonymous"

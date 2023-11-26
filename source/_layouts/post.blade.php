@@ -8,7 +8,14 @@
 @section('body')
     @include('_partials.header')
 
-    <div class="prose mx-auto">
+    @if($page->featureImage)
+        <img
+                class="w-full object-cover aspect-postImage mb-8" src="{{ $page->featureImage['url'] }}"
+                alt="{{ $page->featureImage['title'] }}"
+        >
+    @endif
+
+    <div class="prose prose-invert mx-auto">
         <h1>
             {{ $page->title }}
         </h1>

@@ -4,7 +4,11 @@ module.exports = {
         '!source/**/_tmp/*' // exclude temporary files
     ], {dot: true}),
     theme: {
-        extend: {},
+        extend: {
+            aspectRatio: {
+                "postImage": "16/4"
+            }
+        },
     },
     plugins: [
         require('@tailwindcss/typography'),

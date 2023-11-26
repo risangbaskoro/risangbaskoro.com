@@ -2,8 +2,10 @@
 
 namespace App\Contentful;
 
+use Contentful\Core\File\ImageFile;
 use Contentful\Delivery\Client;
 use Contentful\Delivery\Query;
+use Contentful\Delivery\Resource\Asset;
 use Illuminate\Support\Collection;
 
 class ContentfulCollection
@@ -18,6 +20,11 @@ class ContentfulCollection
         );
     }
 
+    public static function make(): self
+    {
+        return new static();
+    }
+
     public function getPosts(): Collection
     {
         $query = (new Query)->setContentType('posts')
@@ -28,8 +35,28 @@ class ContentfulCollection
                 return [
                     'title' => $item->title,
                     'content' => $item->content,
+                    'featureImage' => $this->imageFileToArray($item->featureImage),
                     'isFeatured' => $item->isFeatured,
                 ];
             });
+    }
+
+    protected function imageFileToArray(?Asset $asset): ?array
+    {
+        if (!$asset) {
+            return null;
+        }
+
+        /** @var ImageFile $imageFile */
+        $imageFile = $asset->getFile();
+
+        return [
+            'title' => $asset->getTitle(),
+            'description' => $asset->getDescription(),
+            'fileName' => $imageFile->getFileName(),
+            'url' => $imageFile->getUrl(),
+            'width' => $imageFile->getWidth(),
+            'height' => $imageFile->getHeight(),
+        ];
     }
 }
