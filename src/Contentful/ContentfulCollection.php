@@ -7,10 +7,14 @@ use Contentful\Delivery\Client;
 use Contentful\Delivery\Query;
 use Contentful\Delivery\Resource\Asset;
 use Illuminate\Support\Collection;
+use League\CommonMark\Parser\MarkdownParserInterface;
+use TightenCo\Jigsaw\Parsers\MarkdownParserContract;
 
 class ContentfulCollection
 {
     public Client $client;
+
+    public MarkdownParserContract|MarkdownParserInterface $parser;
 
     public function __construct()
     {
@@ -18,6 +22,8 @@ class ContentfulCollection
             env('CONTENTFUL_ACCESS_TOKEN'),
             env('CONTENTFUL_SPACE_ID')
         );
+
+        $this->parser = app(MarkdownParserContract::class);
     }
 
     public static function make(): self
@@ -35,6 +41,7 @@ class ContentfulCollection
                 return [
                     'title' => $item->title,
                     'content' => $item->content,
+                    'html' => $this->parser->parse($item->content),
                     'featureImage' => $this->imageFileToArray($item->featureImage),
                     'isFeatured' => $item->isFeatured,
                 ];

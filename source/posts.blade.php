@@ -21,7 +21,7 @@
                         <div class="px-6 py-4">
                             <div class="font-bold text-xl mb-2">{{ $post->title }}</div>
                             <p class="text-sm line-clamp-3">
-                                {{ strip_tags($post) }}
+                                {!! strip_tags($post->html) !!}
                             </p>
                         </div>
                     </div>
@@ -48,7 +48,7 @@
                         <div class="px-6 py-4">
                             <div class="font-bold text-xl mb-2">{{ $post->title }}</div>
                             <p class="text-sm line-clamp-3">
-                                {{ strip_tags($post) }}
+                                {!! strip_tags($post->html) !!}
                             </p>
                         </div>
                     </div>
