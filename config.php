@@ -50,6 +50,10 @@ return [
             'title' => 'Posts',
             'link' => '/posts'
         ],
+        [
+            'title' => 'Projects',
+            'link' => '/coming-soon' // TODO: Change to '/projects'
+        ],
     ],
 
     // Contentful
