@@ -10,14 +10,7 @@
 
         <div class="flex space-x-4 justify-center items-center">
             @foreach($page->navigations as $nav)
-                <a href="{{ $page->baseUrl . $nav->link }}"
-                   @class([
-                        "px-4 py-2 hover:bg-dark-700 transition duration-300 ease-in-out rounded-lg hover:shadow !shadow-dark-600",
-                        "pointer-events-none" => $page->getUrl() === $page->baseUrl . $nav->link,
-                    ])
-                >
-                    {{ $nav->title }}
-                </a>
+                @include('_partials.nav-link', ['nav' => $nav])
             @endforeach
         </div>
     </nav>
