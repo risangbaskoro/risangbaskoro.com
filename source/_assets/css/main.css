@@ -6,6 +6,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 @layer utilities {
+    .content-container {
+        @apply max-w-7xl mx-auto px-6 md:px-8 2xl:px-0;
+    }
+
     /* Underline Nav */
     .underline-nav {
         stroke-dasharray: 140;
@@ -17,5 +21,10 @@
         to {
             stroke-dashoffset: 0;
         }
+    }
+
+    /* Special Underline */
+    .special-underline {
+        display: inline-block;
     }
 }
