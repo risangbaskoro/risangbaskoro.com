@@ -1,6 +1,7 @@
 <header class="sticky z-50 top-0 backdrop-blur-xl bg-dark-900/75 hover:bg-dark-900 transition">
     <nav class="absolute p-6 grid grid-cols-3 justify-between items-center w-full">
         <a href="/"
+           class="w-fit"
            @class([
                 "pointer-events-none" => $page->getUrl() === $page->baseUrl.'/',
            ])
