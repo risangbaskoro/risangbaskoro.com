@@ -19,7 +19,7 @@
                             >
                         @endif
                         <div class="px-6 py-4">
-                            <div class="font-bold text-xl mb-2">{{ $post->title }}</div>
+                            <div class="font-bold text-xl mb-2 line-clamp-1">{{ $post->title }}</div>
                             <p class="text-sm line-clamp-3">
                                 {!! strip_tags($post->html) !!}
                             </p>
@@ -46,7 +46,7 @@
                             >
                         @endif
                         <div class="px-6 py-4">
-                            <div class="font-bold text-xl mb-2">{{ $post->title }}</div>
+                            <div class="font-bold text-xl mb-2 line-clamp-1">{{ $post->title }}</div>
                             <p class="text-sm line-clamp-3">
                                 {!! strip_tags($post->html) !!}
                             </p>
