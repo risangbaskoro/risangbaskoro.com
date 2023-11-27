@@ -38,12 +38,16 @@ class ContentfulCollection
 
         return collect($this->client->getEntries($query)->getItems())
             ->map(function ($item) {
+                $sys = (object) $item->getSystemProperties()->jsonSerialize();
+
                 return [
                     'title' => $item->title,
                     'content' => $item->content,
                     'html' => $this->parser->parse($item->content),
                     'featureImage' => $this->imageFileToArray($item->featureImage),
                     'isFeatured' => $item->isFeatured,
+                    'createdAt' => $sys->createdAt,
+                    'updatedAt' => $sys->updatedAt,
                 ];
             });
     }
