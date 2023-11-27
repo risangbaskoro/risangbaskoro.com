@@ -1,6 +1,8 @@
 <footer class="mx-auto w-full p-8 flex flex-col justify-center items-center space-y-2 text-sm text-center">
     <p>
         © {{ date('Y') }} {{ $page->siteName }}.
+        •
+        <a href="{{ $page->baseUrl . '/privacy-policy' }}" class="font-bold hover:underline">Privacy policy</a>
     </p>
     <p>
         Built with
