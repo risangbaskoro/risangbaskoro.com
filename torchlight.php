@@ -32,7 +32,7 @@ return [
         'lineNumbers' => true,
 
         // Control the `style` attribute applied to line numbers.
-        'lineNumbersStyle' => 'margin-right: 1rem;',
+        'lineNumbersStyle' => 'margin-right: 1rem; -webkit-user-select: none; user-select: none;',
 
         // Turn on +/- diff indicators.
         'diffIndicators' => true,
