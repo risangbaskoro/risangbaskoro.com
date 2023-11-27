@@ -5,7 +5,7 @@
 
     <section id="hero" class="py-32">
         <div class="container content-container">
-            <div class="prose prose-invert lg:prose-2xl max-w-none text-justify md:text-left">
+            <div class="prose prose-invert lg:prose-2xl max-w-none prose-p:text-justify prose-p:md:text-left">
                 <h1 class="font-serif text-primary-400 font-italic">
                     From <em class="special-underline">Hobbyist</em> to Professional Web Application Developer
                 </h1>
