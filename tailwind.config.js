@@ -9,6 +9,7 @@ module.exports = {
         extend: {
             colors: {
                 'dark': colors.stone,
+                'primary': colors.amber,
             },
             aspectRatio: {
                 "postImage": "16/4"
