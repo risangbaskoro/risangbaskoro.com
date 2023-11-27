@@ -20,7 +20,7 @@ return [
                 return ContentfulCollection::make()->getPosts();
             },
             'excerpt' => function ($page, $limit = 100, $end = '...'): string {
-                return substr(strip_tags($page), 0, $limit) . $end;
+                return substr(strip_tags($page), 0, $limit).$end;
             },
             'metaDescription' => function ($page): string {
                 $doc = new DOMDocument();
@@ -49,11 +49,24 @@ return [
         [
             'title' => 'Posts',
             'link' => '/posts'
-        ],
-        [
+        ], [
             'title' => 'Projects',
             'link' => '/coming-soon' // TODO: Change to '/projects'
         ],
+    ],
+
+    // Socials
+    'socials' => [
+        [
+            'name' => 'X',
+            'link' => 'https://x.com/risangbaskoro',
+        ], [
+            'name' => 'GitHub',
+            'link' => 'https://github.com/risangbaskoro',
+        ], [
+            'name' => 'Bluesky',
+            'link' => 'https://bsky.app/profile/risang.bsky.social',
+        ]
     ],
 
     // Contentful
