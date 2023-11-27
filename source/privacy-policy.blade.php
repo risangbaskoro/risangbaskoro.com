@@ -3,14 +3,14 @@
 @section('body')
     @include('_partials.header')
 
-    <div class="prose prose-invert mx-auto max-w-4xl py-20 md:py-32 px-6 lg:px-0">
+    <div class="prose prose-invert prose-h1:font-handwriting mx-auto max-w-4xl py-20 md:py-32 px-6 lg:px-0">
 
         <h1 class="text-primary-400">
             I value your privacy
         </h1>
-        <h2>
+        <h1>
             Therefore...
-        </h2>
+        </h1>
         <p>
             I limit the tools I use that would attempt to track you.
         </p>

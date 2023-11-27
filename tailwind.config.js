@@ -6,6 +6,11 @@ module.exports = {
         '!source/**/_tmp/*' // exclude temporary files
     ], {dot: true}),
     theme: {
+        fontFamily: {
+            'handwriting': ['"Indie Flower"', 'cursive'],
+            'sans': ['"Open Sans"', 'sans-serif'],
+            'serif': ['"Merriweather"', 'serif'],
+        },
         extend: {
             colors: {
                 'dark': colors.stone,
