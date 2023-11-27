@@ -9,7 +9,7 @@ module.exports = {
         fontFamily: {
             'handwriting': ['"Indie Flower"', 'cursive'],
             'sans': ['"Open Sans"', 'sans-serif'],
-            'serif': ['"Merriweather"', 'serif'],
+            'serif': ['"Playfair Display"', 'serif'],
         },
         extend: {
             colors: {
