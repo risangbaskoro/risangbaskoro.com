@@ -14,7 +14,7 @@
     .underline-nav {
         stroke-dasharray: 140;
         stroke-dashoffset: 140;
-        animation: underline-nav 800ms ease-out;
+        animation: underline-nav 800ms ease-out forwards;
     }
 
     @keyframes underline-nav {
