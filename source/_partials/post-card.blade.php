@@ -1,5 +1,5 @@
 <a href="{{ $post->getUrl() }}" class="mx-auto w-full">
-    <div class="min-w-full max-w-sm rounded overflow-hidden shadow-md hover:shadow-lg transition-shadow !shadow-dark-600 border border-dark-600">
+    <div class="min-w-full max-w-sm rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow !shadow-dark-600 border border-dark-600">
         @if($post->featureImage)
             <img
                     class="w-full object-cover aspect-video" src="{{ $post->featureImage['url'] }}"
