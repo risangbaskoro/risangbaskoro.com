@@ -1,7 +1,7 @@
 @extends('_layouts.main')
 
 @section('body')
-    @include('_partials.header')
+    @include('_components.old.header')
 
     <div class="prose prose-invert prose-h1:font-handwriting mx-auto max-w-4xl py-20 md:py-32 px-6 lg:px-0">
 
@@ -35,5 +35,5 @@
 
     </div>
 
-    @include('_partials.footer')
+    @include('_components.old.footer')
 @endsection

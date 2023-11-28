@@ -7,5 +7,5 @@
         {{ $nav->title }}
     </div>
 
-    @include('_partials.animated-special-underline')
+    @include('_components.old.animated-special-underline')
 </a>

@@ -1,7 +1,7 @@
 @extends('_layouts.main')
 
 @section('body')
-    @include('_partials.header')
+    @include('_components.old.header')
 
     <section id="hero" class="py-32">
         <div class="container content-container">
@@ -16,7 +16,7 @@
                     My mission is to empower clients by solving their unique challenges and delivering exceptional
                     results.
                 </p>
-                @include('_partials.cta-button', [
+                @include('_components.old.cta-button', [
                     'text' => 'See how can I help you',
                     'link' => '/coming-soon',
                 ])
@@ -24,6 +24,6 @@
         </div>
     </section>
 
-    @include('_partials.special-underline')
-    @include('_partials.footer')
+    @include('_components.old.special-underline')
+    @include('_components.old.footer')
 @endsection

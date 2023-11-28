@@ -11,7 +11,7 @@
 
         <div class="flex space-x-4 justify-center items-center">
             @foreach($page->navigations as $nav)
-                @include('_partials.nav-link', ['nav' => $nav])
+                @include('_components.old.nav-link', ['nav' => $nav])
             @endforeach
         </div>
     </nav>

@@ -19,7 +19,7 @@
 @endpush
 
 @section('body')
-    @include('_partials.header')
+    @include('_components.old.header')
 
     @if($page->featureImage)
         <img
@@ -36,7 +36,7 @@
         {!! $page !!}
     </div>
 
-    @include('_partials.giscus')
+    @include('_components.old.giscus')
 
-    @include('_partials.footer')
+    @include('_components.old.footer')
 @endsection
