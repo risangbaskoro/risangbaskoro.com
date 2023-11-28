@@ -5,19 +5,32 @@ gsap.registerPlugin(
     ScrollTrigger,
 );
 
-const homepageHeroAppearTimeline = gsap.timeline();
+const homepageHeroScrollTimeline = gsap.timeline({
+    scrollTrigger: {
+        trigger: '#hero',
+        start: 'top top',
+        end: 'bottom 70%',
+        scrub: true,
+        pin: true,
+    }
+});
 
-homepageHeroAppearTimeline
-    .from('#hero-title', {
+homepageHeroScrollTimeline
+    .fromTo('#hero-title', {
+        opacity: 1,
+        y: 0,
+        ease: 'power1.out',
+    }, {
         opacity: 0,
-        y: 20,
+        y: -20,
         ease: 'power1.out',
     })
-    .from('#hero-content', {
-        opacity: 0,
-        y: 20,
+    .fromTo('#hero-content', {
+        opacity: 1,
+        y: 0,
         ease: 'power1.out',
-    })
-    .from('#hero-scroll-prompt', {
+    },{
         opacity: 0,
+        y: -20,
+        ease: 'power1.out',
     });
