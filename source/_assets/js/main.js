@@ -10,12 +10,12 @@ const homepageHeroAppearTimeline = gsap.timeline();
 homepageHeroAppearTimeline
     .from('#hero-title', {
         opacity: 0,
-        y: 100,
+        y: 20,
         ease: 'power1.out',
     })
     .from('#hero-content', {
         opacity: 0,
-        y: 100,
+        y: 20,
         ease: 'power1.out',
     })
     .from('#hero-scroll-prompt', {
