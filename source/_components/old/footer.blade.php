@@ -4,7 +4,7 @@
             © {{ date('Y') }} {{ $page->siteName }}
         </div>
         <div class="flex gap-2">
-            <a href="{{ $page->baseUrl . '/privacy-policy' }}" class="font-bold hover:underline">
+            <a rel="privacy-policy" href="{{ $page->baseUrl . '/privacy-policy' }}" class="font-bold hover:underline">
                 Privacy policy
             </a>
 
