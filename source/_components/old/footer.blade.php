@@ -11,7 +11,7 @@
             &middot;
 
             @foreach($page->socials as $social)
-                <a href="{{ $social->link }}" target="_blank" class="font-bold hover:underline">
+                <a rel="me" href="{{ $social->link }}" target="_blank" class="font-bold hover:underline">
                     {{ $social->name }}
                 </a>
                 @if(!$loop->last) &middot; @endif

@@ -66,6 +66,9 @@ return [
         ], [
             'name' => 'Bluesky',
             'link' => 'https://bsky.app/profile/risang.bsky.social',
+        ], [
+            'name' => 'Mastodon',
+            'link' => 'https://phpc.social/@risangbaskoro',
         ]
     ],
 
